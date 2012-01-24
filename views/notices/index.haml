@@ -1,0 +1,21 @@
+#left-content-notice
+	%section
+		%h1 Notices
+		- unless @pagination.empty?
+			- @pagination.each do |notice|
+				%article.notice
+					%header
+						%h2= notice.title
+					.meta= notice.created_at
+					%figure
+						%img{:src => notice.img}
+					%p= sript_html(notice.description)
+					%footer= notice.link
+		- else
+			%p No notices!
+		%footer
+			.wp-pagenavi
+				%span Page :
+				=@mini_nav
+			// %a(href='/notice/new') New #03A5D1
+#right-content-notice

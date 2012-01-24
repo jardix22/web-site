@@ -1,0 +1,32 @@
+#left-content-profile
+	.blue-list
+		%h3 Institucionalidad
+		%ul
+			%li
+				%a{:href => '/profile/1', :id =>'id1'} Presentación
+			%li
+				%a{:href => '/profile/2', :id =>'id2'} Misión y Visión
+			%li
+				%a{:href => '/profile/3', :id =>'id3'} Objetivos
+		.blue-list
+		%h3 Gobierno y Estructura 
+		%ul
+			%li
+				%a{:href => '/profile/4', :id =>'id4'} Gerencia
+			%li
+				%a{:href => '/profile/2', :id =>'id1'} Administración
+			%li
+				%a{:href => '/profile/3'} Objetivos
+	%h2 The Amazing Toggling Title
+	%form#reverse(action="/reverse" method="POST")
+		%input#word(type="text" name="word")
+		%input(type="submit" value="Reverse")
+	%ul
+		%li <a id="server" href="/profile/response">Call server-side Function</a>
+		%li <a id="time" href="/profile/time">Get the time</a>
+		%li <a id="amazing" href="/profile">Toggle Title</a>
+#right-content-profile
+	%img#spinner(src="/images/spinner_2.gif" )
+	%section
+		%article
+			#msg

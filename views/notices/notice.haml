@@ -1,0 +1,10 @@
+%section
+	%article.notice
+		%header
+			%h2= @notice.title
+		.meta= @notice.created_at
+		%figure
+			%img{:src => @notice.img}
+		= @notice.description
+		%footer
+			%a{:href => '/notice/1', :class => 'back'} Back

@@ -1,0 +1,182 @@
+@import url(reset.css);
+@import url(font.css);
+body {
+  background-color: rgba(0, 0, 0, 0.02);
+  background-image: url(/images/body-bg6.png);
+  font: 14px Arial, Helvetica, sans-serif; }
+
+a {
+  color: #00b7ff; }
+  a:hover {
+    color: #999999;
+    cursor: pointer; }
+
+section {
+  color: #5d5d5d;
+  padding: 10px 15px 10px 15px; }
+  section h1 {
+    color: #1b72d2;
+    font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    margin: 0 0 5px 0;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px white; }
+  section article {
+    margin: 0px 0px 10px 0px; }
+    section article header h2 {
+      color: #5d5d5d;
+      font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+      font-size: 22px;
+      font-weight: 100;
+      text-shadow: 1px 1px 1px white; }
+    section article figure {
+      text-align: center;
+      padding: 10px 0; }
+      section article figure img {
+        box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+    section article footer {
+      margin-top: 1em;
+      text-align: right; }
+    section article h3 {
+      font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 100;
+      line-height: 160%; }
+    section article ul li {
+      background: url(/images/arrow.png) 5px 6px no-repeat;
+      font-family: "Droid Sans" !important;
+      font-size: 0.96em;
+      line-height: 160%;
+      padding: 0 0 0.5em 1.3em; }
+  section footer {
+    padding: 7px 7px 7px 0; }
+  section p {
+    font-family: "Droid Sans" !important;
+    font-size: 0.96em;
+    line-height: 160%;
+    padding: 0 0 0.5em 0; }
+
+#main-header {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  margin: 30px auto 10px auto;
+  position: relative;
+  width: 1024px; }
+
+#logo {
+  padding: 8px 8px 10px 8px; }
+
+#side-bar {
+  background-image: url(/images/nav.png);
+  height: 179px; }
+
+#main-nav ul {
+  border-top: 1px dashed #0089e1; }
+  #main-nav ul li {
+    display: inline-block;
+    text-align: center; }
+    #main-nav ul li a {
+      background: url(/images/titles.png) no-repeat;
+      color: transparent;
+      display: block;
+      height: 20px;
+      line-height: 20px;
+      text-decoration: none;
+      width: 100px; }
+      #main-nav ul li a#nav_1 {
+        background-position: 32px 0; }
+      #main-nav ul li a#nav_2 {
+        background-position: 10px -20px; }
+      #main-nav ul li a#nav_3 {
+        background-position: 22px -40px; }
+      #main-nav ul li a#nav_4 {
+        background-position: 10px -60px; }
+      #main-nav ul li a:hover {
+        background-color: rgba(82, 130, 212, 0.1);
+        cursor: pointer; }
+
+#subnav {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 11px;
+  height: 20px;
+  line-height: 20px;
+  padding: 0 20px; }
+
+#main-container {
+  background-color: white;
+  background-image: url(/images/content-bg.png);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto;
+  overflow: auto;
+  position: relative;
+  width: 1024px; }
+
+#spinner {
+  display: none;
+  left: 58%;
+  position: absolute;
+  top: 130px; }
+
+#left-container {
+  float: left;
+  width: 75%; }
+
+#right-container {
+  float: left;
+  outline-right: 1px solid rgba(0, 0, 0, 0.1);
+  width: 25%; }
+
+.wp-pagenavi span {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+  padding: 0px 5px; }
+.wp-pagenavi a {
+  background-color: #fefefe;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.04) inset;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 0.8em;
+  padding: 5px 10px; }
+  .wp-pagenavi a:hover {
+    color: rgba(0, 0, 0, 0.7); }
+
+#main-footer {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.3);
+  margin: 10px auto 30px auto;
+  width: 1024px; }
+
+#footer-widget {
+  padding-top: 45px; }
+
+#centros-widgets {
+  display: inline-block;
+  padding: 20px 0px 0px 45px;
+  width: 180px; }
+
+.widgettitle {
+  font-family: "Yanone Kaffeesatz", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 100;
+  text-shadow: 1px 1px 1px white; }
+
+.list-widgets li {
+  background: url(/images/footer-bullet.png) 5px 6px no-repeat;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 8px 0px;
+  padding-left: 20px; }
+
+#copyright {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 11px;
+  margin: 10px 0px;
+  text-shadow: 1px 1px 1px white;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-right: 10px; }

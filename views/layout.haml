@@ -1,0 +1,35 @@
+!!!5
+%html
+	%head
+		%meta(charset='utf8')
+		%link{:rel=>'stylesheet', :href=>'/stylesheets/style.css', :type => 'text/css'} 
+		%link{:rel=>'stylesheet', :href=>'/stylesheets/nice-principal.css', :type => 'text/css'} 
+		%script(src="/javascripts/right.js")
+		%script(src="/javascripts/custom.js")
+	%body
+		#wrapper
+			%header#main-header
+				%figure#logo
+					%img(src='/images/logo.png'  alt='essalud')
+				%nav#main-nav
+					%ul
+						%li
+							%a#nav_1(href='/') Inicio
+						%li
+							%a#nav_2(href='/profile') Presentacion
+						%li
+							%a#nav_3(href='/notice/1') Noticias
+						%li
+							%a#nav_4 Publicaciónes
+				#side-bar
+				#subnav 											
+			#main-container= yield
+			%footer#main-footer
+				#footer-widgets
+					#centros-widgets
+						%h4.widgettitle Centros Asistenciales
+						%ul.list-widgets
+							%li.centro Puno
+							%li.centro Juli
+							%li.centro Pedro	
+					%p#copyright Designed by <a> Jsp Sinatra Themes </a> | Powered by <a> Ruby </a>
