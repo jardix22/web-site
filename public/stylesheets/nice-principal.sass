@@ -7,7 +7,6 @@
 	font-size: 0.8em
 	&:hover
 		font-weight 200
-//
 .nice-list
 	margin: 0px 5px 5px 0px
 	& header h5
@@ -23,7 +22,7 @@
 				//outline: 1px dashed #999
 				display: inline-block
 				color: #888
-				font-size: 11px
+				font-size: 0.82em
 				height: 50px
 				line-height: 50px
 				text-decoration: none
@@ -37,7 +36,7 @@
 a#img_11
 	background-position: 10px -500px
 .nice-list-two
-	border-bottom: 1px solid rgba(0,0,0,0.15)
+	border-bottom: 1px dashed rgba(0,0,0,0.15)
 	margin: 0px 0px 10px 0px
 	padding-bottom: 5px
 	& header
@@ -49,10 +48,12 @@ a#img_11
 			line-height: 35px
 			text-align: center
 	& ul
-		background: url("/images/icons-columna_blue.png") 5px 0px no-repeat
+		margin-left: 15px
 		& li
-			margin: 4px 0px
+			background: url("/images/icons-columna_blue.png") 5px -2px no-repeat
+			margin: 5px 0px
 			padding: 3px 1px 3px 60px
+			//outline: 1px solid #999
 			& .name
 				color: #777
 				font-weight: normal
@@ -67,14 +68,23 @@ a#img_11
 				padding-top: 3px
 			&:hover
 				cursor: pointer
+			&#li_1
+			&#li_2
+				background-position: 5px -84px	
+			&#li_3
+				background-position: 5px -44px
+			&#li_4
+				background-position: 5px -128px	
 //Notice
 #left-content-notice
 	border-right: 1px solid rgba(0,0,0,0.1)
-	float: left
-	width: 65%
+	vertical-align: top
+	display: inline-block
+	width: 68%
 #right-content-notice
-	float: left
-	width: 35%
+	vertical-align: top
+	display: inline-block
+	width: 31%
 .more
 	@extend .button
 	padding: 5px 10px
@@ -91,22 +101,62 @@ a#img_11
 	padding: 2px 0
 // Profile
 #left-content-profile
-	display: block
-	height: 100%
 	background-color: rgba(0,0,0,0.02)
-	float: left
-	width: 25%
+	display: inline-block
+	height: 100%
+	width: 24%
+	vertical-align: top
 #right-content-profile
-	display: block
-	//border-left: 1px solid rgba(0,0,0,0.1)
-	float: left
+	vertical-align: top
+	display: inline-block
 	width: 75%
 .blue-list
 	margin: 10px 0px 10px 15px
 	& h3
 		font-family: "Yanone Kaffeesatz", Arial, sans-serif
-		font-weight: 100
 		font-size: 1.5em
+		font-weight: 300
+		color: #555
 	& ul li
 		background: url(/images/sidebar_bullet.png) 3px 10px no-repeat
 		padding: 5px 0px 5px 15px
+.presentacion
+	border-bottom: 1px dashed #ddd
+	padding: 10px 0px
+	& ul
+		margin: 5px 0 0 15px 
+		& li
+			background-image: url(/images/nice-img.png)
+			padding-left: 60px
+			background-position: 5px 0px
+			background-repeat: no-repeat	
+			&.link_1
+				background-position: 5px 0px
+			&.link_2
+				background-position: 5px -44px
+			& a
+				color: #777
+				cursor: pointer
+				display: block
+				font-size: 0.85em
+				font-weight: 180
+				height: 45px
+				line-height: 45px
+				text-transform: uppercase
+				text-decoration: none
+				&:hover
+					color: #1B72D2
+.pretty_login
+	margin-bottom: 20px
+	display: block
+	text-align: center
+#username, #password
+	padding: 5px
+	width: 200px
+	border-radius: 7px
+	border: 1px solid #999
+	margin: 1.5em 0 0.5em 	1.5em
+	color: #555
+#button
+	margin: 1.5em 1.5em 0.5em 1.5em
+	padding: 0.3em 1.5em

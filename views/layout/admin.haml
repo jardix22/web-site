@@ -6,37 +6,31 @@
 		%title EsSalud - Red Asistencial Puno
 		%link{:rel=>'stylesheet', :href=>'/stylesheets/style.css', :type => 'text/css'} 
 		%link{:rel=>'stylesheet', :href=>'/stylesheets/nice-principal.css', :type => 'text/css'} 
-		%link{:rel=>'stylesheet', :href=>'/stylesheets/slider.css', :type => 'text/css'} 
+		%link{:rel=>'stylesheet', :href=>'/stylesheets/pretty-style.css', :type => 'text/css'} 
 		%script(src="/javascripts/right.js")
-		%script(src="/javascripts/custom.js")
-		%script(src="/javascripts/slider.js")
+		%script(src="/javascripts/admin_tools.js")
 	%body
 		#wrapper
 			%header#main-header
 				%figure#logo
 					%img(src='/images/logo.png'  alt='essalud')
-				%nav#main-nav
+				.lagout
+					= logout()
+				%nav#pretty-nav
 					%ul
 						%li
-							%a#nav_1(href='/')
+							%a(class="selected_" href='/admin/notice') Noticias
 						%li
-							%a#nav_2(href='/profile')
+							%a(class="an_selected_" href='/admin/document') Documentos
+				#pretty-subnav
+					%ul
 						%li
-							%a#nav_3(href='/notice/1')
-				#side-bar
-					.slider
-						%ul#my_slider
-							%li
-								%img(src="/images/slider/pic_1.jpg" alt="")
-							%li 
-								%img(src="/images/slider/pic_2.jpg" alt="")
-							%li
-								%img(src="/images/slider/pic_3.jpg" alt="")
-							%li
-								%img(src="/images/slider/pic_4.jpg" alt="")
-						#counter
-				#subnav= @path
-			#main-container= yield
+							%a(href="/notice/new") Publicar Nueva Noticia
+						%li
+							%a(href="/document/new") Subir Nuevo Documento
+			#main-container
+				//.pretty-right-content
+				= yield
 			%footer#main-footer
 				#footer-widgets
 					#centros-widgets

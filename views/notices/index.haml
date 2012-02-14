@@ -16,6 +16,22 @@
 		%footer
 			.wp-pagenavi
 				%span Page :
-				=@mini_nav
+				= @mini_nav
 			// %a(href='/notice/new') New #03A5D1
 #right-content-notice
+	.blue-list
+		%h3 Ultimas Entradas
+		%ul
+			- unless @most_recent_notice.empty?
+				- @most_recent_notice.each do |recent_notice|
+					%li
+						%a(href = "/notice/view/#{recent_notice.id}")= recent_notice.title
+			- else
+				%p No notices!
+	.blue-list
+		%h3 Las más leidas
+		%ul
+			%li
+				%a Don't Worry  12.pts	
+
+				

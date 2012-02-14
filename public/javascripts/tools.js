@@ -21,9 +21,6 @@
     }
   });
 });
-
-
-
 "#id1".onClick(function(event){
   event.stop();
   $('msg').load("/profile/1");
