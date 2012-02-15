@@ -1,7 +1,10 @@
 source :rubygems
 gem 'sinatra'
 
-gem 'sqlite3'
+group :development, :test do
+	gem 'sqlite3-ruby', :require => 'sqlite3'
+end
+
 gem 'sass'
 gem 'haml'
 gem 'datamapper'
