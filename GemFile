@@ -4,8 +4,6 @@ gem 'sinatra'
 gem 'sqlite3'
 gem 'sass'
 gem 'haml'
-
 gem 'datamapper'
 gem 'dm-sqlite-adapter'
-
 gem 'mini_magick'
