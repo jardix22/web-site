@@ -52,6 +52,7 @@ class User
 	has n, :documents
 	has n, :notices
 end
+DataMapper.finalize
 DataMapper.auto_upgrade!
 # Helpers
 helpers do
