@@ -1,12 +1,16 @@
-source :rubygems
+source 'http://rubygems.org'
 gem 'sinatra'
-
-group :development, :test do
-	gem 'sqlite3-ruby', :require => 'sqlite3'
-end
-
+gem 'heroku'
+gem 'datamapper'
 gem 'sass'
 gem 'haml'
-gem 'datamapper'
-gem 'dm-sqlite-adapter'
 gem 'mini_magick'
+
+group :development do
+  gem 'sqlite3-ruby'
+  gem 'dm-sqlite-adapter'
+end
+
+group :production do
+  gem 'dm-postgres-adapter'
+end
